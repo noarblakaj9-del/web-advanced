@@ -6,13 +6,15 @@
 </head>
 <body>
 
-  <form>  
+  <form> 
+    <fieldset>
+    <legend>Personal information</legend>
     <label for="firstname">First name: </label></br>
     <input type="text" id="firstname" name="firstname"></br>
        <label for="lastnamename">Lastname: </label></br>
     <input type="text" id="lastname" name="lastname"></br>
         <label for="email">Email: </label></br>
-    <input type="email" id="email" name="email"></br>
+    <input type="email" id="email" name="email" required></br>
         <label for="password">Password: </label></br>
     <input type="password" id="password" name="password"></br>
     <label for="sumbit">Sumbit: </label></br>
@@ -41,12 +43,30 @@
       <option valu="Dog">Dog</option>
             <option valu="Cat">Cat</option>
                   <option valu="Fish">Fish</option>
-                      <label for="sumbit">Sumbit: </label></br>
-    <input type="submit" id="submit" name="submit"></br>
+    </select></br>
+
+<textarea name="message" rows="10" cols="20" maxlength="50"></textarea></br>
+<input type="submit" id="submit" name="submit"></br>
+
+
+<input type="text" id="firstname" name="firstname" value="John" readonly></br>
+
+<input type="text" id="firstname" name="firstname" value="John" disabled></br>
+<label  for="firstname">Password: </label></br>
+<input type="password" id="password" name="password" size="40"></br>
 
 
 
-    </form>
+
+                    <input type="password" id="password" name="password" size="40"></br>
+                                 <label  for="firstname">Password: </label></br>
+                     <input type="password" id="password" name="password" size="40" placeholder="Password"></br>
+
+
+
+
+</fieldset> 
+ </form>
 
 </body>
 </html>

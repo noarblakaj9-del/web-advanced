@@ -1,0 +1,82 @@
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+
+li{
+    float: left;
+}
+
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+li a:hover:not(.active){
+    background-color: #111;
+}
+
+
+.active{
+    background-color: #4CAF50;
+}
+
+.navbar{
+    overflow: hidden;
+    background-color: #333; 
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a{
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}  font siize rorder colgroupll
+
+.dropdown{
+    float: left;
+    overflow: hidden;
+}    
+
+
+.dropdown .dropdownbtn{
+    font-size: 16px;
+    border: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+
+.navbar a:hover, .dropdown .dropbtn{
+     background-color: #4CAF50;     
+}    
+
+
+.dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: antiquewhite;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px black;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}

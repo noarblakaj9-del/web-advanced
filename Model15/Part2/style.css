@@ -80,3 +80,39 @@ li a:hover:not(.active){
 .dropdown:hover .dropdown-content{
     display: block;
 }
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#vertical-menu{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+
+
+
+}
+
+#vertical-menu li a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#vertica-menu li a.active{
+    background-color: #4CAF50;
+    color: white;
+}
+
+#vertical-menu li a.acti:hover:not(.active){
+    background-color: #555;
+    color: white;
+}

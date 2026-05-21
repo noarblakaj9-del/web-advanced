@@ -148,6 +148,25 @@
     border-radius: 30px/ 10px;
 }
 
+.example{
+    margin-bottom: 30px;
+}
+
+.example h2{
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.border-image-demo{
+    border: 25px solid transparent;
+    border-image: url('images/pic1.png') 25 25 round;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+
 
 body{
     counter-reset: number;

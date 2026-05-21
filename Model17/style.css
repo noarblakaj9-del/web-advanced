@@ -46,3 +46,124 @@
 .tooltip:hover .tooltiptext{
     visibility: visible;
 }
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 17</title>
+       <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     
+
+
+    <h1>Digital School</h1>
+    <p>The best school in the world</p>
+
+
+
+    <div id="counter-container">
+        <h1>CSS Counters</h1>
+        <h2>HTML</h2>
+           <h2>CSS</h2>
+              <h2>JavaScript</h2>
+                 <h2>PHP</h2>
+    </div>
+
+
+
+    <div id="example-one"></div>
+
+
+      <div id="example-two"></div>
+
+
+        <div id="example-three"></div>
+        
+          <div id="example-four"></div>
+
+
+          <div id="example-five"></div>
+
+
+          <div id="example-six"></div>
+
+          
+          
+
+
+
+</body>
+</html>
+
+
+
+
+
+#example-three {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: url(../bglines.png); 
+}
+
+
+#example-four{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px 60px 5px;
+    background: #BADA55;
+    
+}
+
+
+#example-five{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px 60px 5px;
+    background: #BADA55;
+}    
+
+
+#example-six{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px 60px 5px;
+    background: #BADA55;
+}    
+
+
+#example-five{
+    border-radius: 10px / 30px;
+}
+
+
+#example-six{
+    border-radius: 30px/ 10px;
+}
+
+
+body{
+    counter-reset: number;
+}
+
+
+h2::before{
+    counter-increment:number ;
+    content: counter(number);
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px 12px;
+    color: aqua;
+    font-weight: bold;
+    margin: 10px;
+}
+
+
+

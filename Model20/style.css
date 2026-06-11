@@ -227,6 +227,41 @@ footer ul {
  
 }
 
+@media only screen and (max-width:880px){
+   header{
+    flex-direction: column;
+   }
+
+   nav ul li{
+    width: 100%;
+    text-align: center;
+   }
+
+   header img{
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .main-heading h1{
+    font-size: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   .main-heading a{
+    font-size: 13px;
+    padding: 20px;
+   }
+}
+
+nav ul li.active{
+    padding-right: 0px;
+}
+    
+
+
+
 
 
 

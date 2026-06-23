@@ -1,14 +1,117 @@
-nav ul li{
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+}
+
+#help-page{
+    min-height:100vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("campnou.jpg");
+    background-size:cover;
+    background-position:center;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 0;
+}
+
+header img{
+    width:120px;
+}
+
+.navbar{
+    list-style:none;
+}
+
+.navbar li{
     display:inline-block;
-    padding: 10px 16px;
+    margin-left:20px;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: white;
+.navbar li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
 }
 
-nav ul li a:active{
-    background-color: #eb7ded;
-    border-radius: 15px;
+.navbar li a:hover{
+    color:#f4d03f;
+}
+
+.help-content{
+    text-align:center;
+    color:white;
+    margin-top:80px;
+}
+
+.help-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.line{
+    width:100px;
+    height:4px;
+    background:#f4d03f;
+    margin:20px auto;
+}
+
+.help-image{
+    width:80%;
+    max-width:600px;
+    margin:30px auto;
+    display:block;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.5);
+}
+
+.help-content h2{
+    margin-top:30px;
+    font-size:28px;
+}
+
+.help-content p{
+    max-width:800px;
+    margin:15px auto;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.help-content ul{
+    list-style:none;
+    margin-top:20px;
+}
+
+.help-content ul li{
+    margin:10px 0;
+}
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+    }
+
+    .navbar li{
+        display:block;
+        margin:10px 0;
+    }
+
+    .help-content h1{
+        font-size:30px;
+    }
 }
